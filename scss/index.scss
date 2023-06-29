@@ -1,0 +1,300 @@
+@import "./variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    width:100%;
+    height:125px;
+    background-color: #41e3ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .creador{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left:20px;
+    }
+
+    //*BTN - MENU
+    .btn-open{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    
+
+    .list{
+        display: flex;
+        list-style:none;
+        margin-right:20px;
+        gap:1rem;
+
+        li a{
+            text-decoration:none;
+            color:black;
+        }
+    }
+
+   
+
+}
+
+
+
+
+///////////////////////////////////////////
+
+
+
+
+
+.back-image{
+    width:100%;
+    height:600px;
+    background-image: url(../img/alberta-g1e64a08e1_1280.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .words{
+
+      h3{
+           text-align: center;
+           font-size:$img-medium;
+           color: $main-color;
+        }
+      h2{
+        text-align: center;
+        font-size:$img-big;
+        color:$main-color;
+      }
+      p{
+        text-align:center; 
+        padding-top:40px;
+        
+        a{
+            text-decoration: none;
+            padding:15px 30px;
+            border: 2px solid rgb(255, 255, 255);
+            color:$main-color;
+            background-color:rgba(0, 0, 0, 0.829);
+            transition: all 0.5s ease;
+        }
+        a:hover{
+            background-color: rgba(0, 0, 0, 0);
+        }
+       }
+    }
+}
+
+
+
+
+
+//////////////////////////////////////////////////
+
+
+
+
+.container{
+    width:100%;
+    height:500px;
+    background-color: beige;
+    display: flex;
+
+    .sobre-mi{
+        width:100%;
+        height:500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:$me-color;
+
+        .cont-text{
+            width:50%;
+            height:400px;
+
+            h2{
+                margin-left:30px;
+            }
+            p{
+                margin: 30px;
+            }
+        }
+
+        .button{
+
+            p{
+                text-align:center; 
+                
+                a{
+                    text-decoration: none;
+                    padding:10px 25px;
+                    border: 2px solid rgb(0, 0, 0);
+                    color:$main-color;
+                    background-color:rgb(0, 0, 0);
+                    transition: all 0.5s ease;
+                }
+                a:hover{
+                    background-color: rgba(255, 255, 255, 0);
+                    color: black;
+                }
+               }
+
+        }
+    }
+
+    .img{
+        width:100%;
+        height:500px;
+        background-color: #41e3ff;
+    }
+}
+
+
+
+
+
+//////////////////////////////////////
+
+
+
+
+
+
+.help{
+    width:100%;
+    height:700px;
+    background-image: url(../img/sky.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+    .ayuda{
+        width:100%;
+        height:150px;
+
+        h2{
+            text-align: center;
+            padding-top:50px;
+            font-size:$letter-size;
+        }
+    }
+}
+
+
+
+
+///////////////////////////////////
+
+
+
+
+.target{
+    width:100%;
+    height:400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+///////////////////////////////////
+
+
+
+
+//*Footer
+
+.foot{
+    width:100%;
+    height:400px;
+    background-color: #419aff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contact{
+      h2, p{
+       margin-bottom:10px;
+      }
+    }
+
+    .formulario{
+        input{
+          width:300px;
+          height:25px;
+          margin-bottom:20px;
+          background-color:#1883fd8f;
+          border:2px solid #000;
+          padding-left:20px;
+         
+
+          &::placeholder{
+            color: #000;
+        }
+        }
+
+        textarea{
+            background-color:#1883fd8f;
+            border:2px solid #000;
+            padding:10px 0 0 20px;
+            outline: none;
+
+            &::placeholder{
+                color: #000;
+            }
+        }
+
+        .btnForm{
+            margin-top:10px;
+            a{
+                border:2px solid #000;
+                padding:5px 10px;
+                text-decoration: none;
+                color: white;
+                background-color: #000;
+                transition: all 0.5s;
+
+                &:hover{
+                background-color: white;
+                color: rgb(0, 0, 0);
+                }
+            }
+        }
+       
+    }
+}
+
+
+.dev{
+    width:100%;
+    height:80px;
+    background-color: #419aff;
+    p{
+        text-align: center;
+       padding-top:30px;
+    }
+}
+
+
+
